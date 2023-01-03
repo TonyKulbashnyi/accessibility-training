@@ -176,3 +176,62 @@ li {
   height: 40px;
   background-size: contain;
 }
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  border-radius: 2px;
+  box-shadow: 0 0 0 2px green !important;
+  border-color: green !important;
+}
+
+.button.is-info,
+.hero.is-info,
+.hero.is-info .subtitle {
+  background: #0277bd;
+  color: white;
+}
+
+a {
+  color: #0277bd;
+}
+
+li.is-active a {
+  color: #0277bd !important;
+}
+
+.subtitle,
+.title {
+  color: #3e3e3e;
+}
+
+.tag:not(body).is-primary{
+  background-color: green;
+}
+
+.tag:not(body).is-danger {
+  background-color: #cf000f;
+  font-weight: 500;
+}
+
+.hero.is-info .tabs a {
+  opacity: 1;
+}
+
+.has-text-grey-light {
+  color: #3e3e3e !important;
+}
+
+.help.is-success {
+  color: green;
+}
+
+.help.is-danger {
+  color: #cf000f;
+}
+
+.navbar-burger {
+  color: white;
+}
