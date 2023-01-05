@@ -178,13 +178,18 @@ li {
 }
 
 a:focus,
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
+.input:focus,
+.select select:focus,
+.button:focus {
+  box-shadow: none;
+  border: none;
+  outline: 2px #0ac60a solid;
+}
+
+.textarea:focus {
   border-radius: 2px;
-  box-shadow: 0 0 0 2px green !important;
-  border-color: green !important;
+  box-shadow: 0 0 0 2px #0ac60a !important;
+  border-color: #0ac60a !important;
 }
 
 .button.is-info,
