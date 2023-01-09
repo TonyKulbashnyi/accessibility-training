@@ -19,7 +19,7 @@
             <a href="#" class="navbar-item logo-link">
               <img src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg" alt="epam logo">
             </a>
-            <button class="navbar-burger burger" data-target="navbarMenu">
+            <button class="navbar-burger burger" aria-haspopup="menu" aria-label="Burger Menu" aria-controls="navbarMenu" data-target="navbarMenu">
               <span></span>
               <span></span>
               <span></span>
@@ -30,7 +30,7 @@
             <div class="navbar-end">
               <span class="navbar-item">
                 <button class="button is-white is-outlined">
-                  <span class="icon">
+                  <span class="icon" aria-hidden="true">
                     <i class="fa fa-home"></i>
                   </span>
                   <span>Home</span>
@@ -38,7 +38,7 @@
               </span>
               <span class="navbar-item">
                 <button class="button is-white is-outlined">
-                  <span class="icon">
+                  <span class="icon" aria-hidden="true">
                     <i class="fab fa-superpowers"></i>
                   </span>
                   <span>Examples</span>
@@ -46,7 +46,7 @@
               </span>
               <span class="navbar-item">
                 <button class="button is-white is-outlined">
-                  <span class="icon">
+                  <span class="icon" aria-hidden="true">
                     <i class="fa fa-book"></i>
                   </span>
                   <span>Documentation</span>
@@ -54,7 +54,7 @@
               </span>
               <span class="navbar-item">
                 <button class="button is-white is-outlined">
-                  <span class="icon">
+                  <span class="icon" aria-hidden="true">
                     <i class="fab fa-github"></i>
                   </span>
                   <span>View Source</span>
@@ -76,7 +76,7 @@
           <div class="box">
             <div class="field is-grouped">
               <p class="control is-expanded">
-                <label>
+                <label aria-label="notify me value">
                   <input class="input">
                 </label>
               </p>
@@ -90,11 +90,11 @@
     </main>
   </div>
 
-  <section class="section" id="about">
+  <section class="section" id="about" aria-labelledby="about-title" aria-describedby="aria-description">
     <div class="section-heading has-text-centered">
-      <h2 class="title is-2">About Us</h2>
+      <h2 class="title is-2" id="about-title">About Us</h2>
       <h3 class="subtitle is-5">We of all trades, master of "some"</h3>
-      <div class="container">
+      <div class="container" id="about-description">
         <p>Web developers with more than <b>4 years</b> of well-rounded experience with a degree in the
           field of
           <b>Computer Science</b>, extensive knowledge of modern Web techniques and love for <b>Coffee</b>.
@@ -175,10 +175,10 @@
     </div>
   </section>
 
-  <section class="hero has-background-grey-light">
+  <section class="hero has-background-grey-light" aria-labelledby="hero-title1">
     <div class="container features">
       <div class="section-heading has-text-centered">
-        <h2 class="title is-2">Two key features</h2>
+        <h2 class="title is-2" id="hero-title1">Two key features</h2>
         <h3 class="subtitle is-5">We don't hide what we do</h3>
       </div>
 
@@ -216,31 +216,31 @@
       </div>
     </div>
   </section>
-  <section class="hero info-content">
+  <section class="hero info-content" aria-labelledby="hero-title2">
     <div class="hero is-info">
       <div class="hero-body">
         <div class="container">
-          <h2 class="title">List of topics</h2>
+          <h2 class="title" id="hero-title2">List of topics</h2>
           <h3 class="subtitle">We are always in touch we the outside world</h3>
         </div>
       </div>
-      <div class="tabs is-boxed is-centered main-menu" id="nav">
+      <div class="tabs is-boxed is-centered main-menu" id="nav" role="tabpanel">
         <ul>
-          <li data-target="pane-1" id="1" class="is-active">
-            <a href="#">
-              <span class="icon is-small"><i class="fa fa-image"></i></span>
+          <li data-target="pane-1" id="1" class="is-active" aria-controls="pane-1">
+            <a href="#a">
+              <span class="icon is-small" aria-hidden="true"><i class="fa fa-image"></i></span>
               <span>Pictures</span>
             </a>
           </li>
-          <li data-target="pane-3" id="3">
-            <a href="#">
-              <span class="icon is-small"><i class="fab fa-superpowers"></i></span>
+          <li data-target="pane-3" id="3" aria-controls="pane-3">
+            <a href="#a">
+              <span class="icon is-small" aria-hidden="true"><i class="fab fa-superpowers"></i></span>
               <span>Team</span>
             </a>
           </li>
-          <li data-target="pane-4" id="4">
-            <a href="#">
-              <span class="icon is-small"><i class="fa fa-film"></i></span>
+          <li data-target="pane-4" id="4" aria-controls="pane-4">
+            <a href="#a">
+              <span class="icon is-small" aria-hidden="true"><i class="fa fa-film"></i></span>
               <span>Video</span>
             </a>
           </li>
@@ -248,21 +248,21 @@
       </div>
     </div>
     <div class="tab-content container">
-    <div class="tab-pane is-active" id="pane-1" class="level">
+    <div class="tab-pane is-active level" id="pane-1" role="tabpanel" aria-labelledby="1">
       <div class="container">
         <div class="columns features">
           <div class="column is-6">
             <div class="card">
               <div class="card-image">
                 <div class="image is-4by3">
-                  <img src="./img/tab-1.jpg" class="modal-button" data-target="modal-image1" alt="controller">
+                  <img src="./img/tab-1.jpg" class="modal-button" aria-controls="modal-image1" data-target="modal-image1" alt="controller">
                 </div>
               </div>
               <div class="card-content">
                 <div class="content">
                   <div>Click on image above</div>
                   <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
-                  <button class="button is-link modal-button" data-target="modal-image1">Image modal</button>
+                  <button class="button is-link modal-button" aria-controls="modal-image1" data-target="modal-image1">Image modal</button>
                 </div>
               </div>
             </div>
@@ -279,7 +279,7 @@
                   <div>Tempor orci dapibus ultrices in.</div>
                   <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
                     sed risus.</p>
-                  <button class="button is-link modal-button" data-target="modal-card">Modal Card</button>
+                  <button class="button is-link modal-button" aria-controls="modal-card" data-target="modal-card">Modal Card</button>
                 </div>
               </div>
             </div>
@@ -288,7 +288,7 @@
       </div>
     </div>
 
-    <div class="tab-pane" id="pane-3">
+    <div class="tab-pane" id="pane-3" role="tabpanel" aria-labelledby="3">
       <div class="columns medias">
         <div class="column">
           <div class="media">
@@ -323,23 +323,23 @@
       </div>
     </div>
 
-    <div class="tab-pane" id="pane-4">
+    <div class="tab-pane" id="pane-4" role="tabpanel" aria-labelledby="4">
       <div class="columns is-centered">
         <div class="column is-three-quarters">
           <h3 class="title has-text-centered">Inspired video</h3>
           <div class="embed-container image">
-            <iframe src="https://player.vimeo.com/video/261794608" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            <iframe aria-label="video norway" src="https://player.vimeo.com/video/261794608" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
   </section>
-  <section class="section has-background-grey-lighter">
+  <section class="section has-background-grey-lighter" aria-labelledby="event-title" aria-describedby="event-description">
     <div class="container has-text-centered">
         <div class="section-heading has-text-centered">
-          <h2 class="title is-2">Upcoming events</h2>
-          <h3 class="subtitle is-5">Outcoming dates for the best options</h3>
+          <h2 class="title is-2" id="event-title">Upcoming events</h2>
+          <h3 class="subtitle is-5" id="event-description">Outcoming dates for the best options</h3>
         </div>
 
       <div class="tile is-ancestor">
@@ -377,11 +377,11 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" aria-labelledby="forum-title" aria-describedby="forum-description">
     <div class="container">
       <div class="section-heading has-text-centered">
-        <h2 class="title is-2">Forum</h2>
-        <h3 class="subtitle is-5">Discuss any topic with no leaving this page</h3>
+        <h2 class="title is-2" id="forum-title">Forum</h2>
+        <h3 class="subtitle is-5" id="forum-description">Discuss any topic with no leaving this page</h3>
       </div>
       <div class="columns">
         <div class="column is-3">
@@ -467,25 +467,29 @@
     </div>
   </section>
 
-  <section class="section has-background-light">
+  <section class="section has-background-light" aria-labelledby="contact-title" aria-describedby="contact-description">
     <div class="container">
       <div class="section-heading has-text-centered">
-        <h2 class="title is-2">Contact us</h2>
-        <h3 class="subtitle is-5">Don't hesitate, ask anything</h3>
+        <h2 class="title is-2" id="contact-title">Contact us</h2>
+        <h3 class="subtitle is-5" id="contact-description">Don't hesitate, ask anything</h3>
       </div>
 
       <form class="column is-half is-offset-one-quarter box">
         <div class="field">
-          <label class="label">Name</label>
+          <label for="text" class="label">Name</label>
           <div class="control">
-            <input class="input" type="text" placeholder="Text input">
+            <label>
+              <input id="text" class="input" type="text" placeholder="Text input">
+            </label>
           </div>
         </div>
 
         <div class="field">
           <label class="label">Username</label>
           <div class="control has-icons-left has-icons-right">
-            <input class="input is-success" type="text">
+            <label aria-label="username">
+              <input class="input is-success" type="text">
+            </label>
             <span class="icon is-small is-left">
               <i class="fas fa-user"></i>
             </span>
@@ -497,9 +501,9 @@
         </div>
 
         <div class="field">
-          <label class="label">Email</label>
+          <label id=email" class="label">Email</label>
           <div class="control has-icons-left has-icons-right">
-            <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+              <input aria-labelledby="email" class="input is-danger" type="email" placeholder="Email input" value="">
             <span class="icon is-small is-left">
               <i class="fas fa-envelope"></i>
             </span>
@@ -511,13 +515,13 @@
         </div>
 
         <div class="field">
-          <label class="label">Subject</label>
+          <label for="subject-select" id="subject" class="label">Subject</label>
           <div class="control">
             <div class="select">
-              <select>
-                <option>Select dropdown</option>
-                <option>With options</option>
-              </select>
+                <select id="subject-select" aria-labelledby="subject">
+                  <option>Select dropdown</option>
+                  <option>With options</option>
+                </select>
             </div>
           </div>
         </div>
@@ -592,10 +596,10 @@
 
       <div class="content has-text-centered">
         <div class="soc">
-          <a href="#"><i class="fab fa-github-alt fa-2x"></i></a>
-          <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
-          <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="#" aria-label="github"><i class="fab fa-github-alt fa-2x"></i></a>
+          <a href="#" aria-label="youtube"><i class="fab fa-youtube fa-2x"></i></a>
+          <a href="#" aria-label="facebook"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="#" aria-label="twitter"><i class="fab fa-twitter fa-2x"></i></a>
         </div>
         <p>The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.</p>
       </div>
@@ -637,7 +641,7 @@
         </div>
       </div>
     </div>
-    <button class="modal-close is-large"></button>
+    <button class="modal-close is-large" aria-label="close modal"></button>
   </div>
 
   <div id="modal-image1" class="modal modal-fx-3dSlit">
@@ -645,7 +649,7 @@
     <div class="modal-content is-huge is-image">
       <img src="https://source.unsplash.com/random/?sig=1" alt="random">
     </div>
-    <button class="modal-close is-large"></button>
+    <button class="modal-close is-large" aria-label="modal close"></button>
   </div>
 
   <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
