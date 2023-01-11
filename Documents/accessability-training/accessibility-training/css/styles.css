@@ -129,6 +129,10 @@
   margin-bottom: .5rem;
 }
 
+p,
+.tile .subtitle {
+  line-height: 1.5;
+}
 
 @media screen and (max-width: 1087px) {
   .navbar-menu {
@@ -201,6 +205,13 @@ a:focus,
 
 a {
   color: #0277bd;
+}
+
+a:link,
+a:hover,
+a:focus {
+  text-decoration: underline;
+  color: #072d94;
 }
 
 li.is-active a {
