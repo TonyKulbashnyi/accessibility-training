@@ -251,3 +251,28 @@ li.is-active a {
 .navbar-burger {
   color: white;
 }
+
+.tabs.is-boxed.main-menu {
+  justify-content: center;
+}
+
+.tabs.is-boxed.main-menu button {
+  opacity: 1;
+  border-radius: 4px 4px 0 0;
+  align-items: center;
+  border: 1px solid transparent;
+  border-bottom-color: #dbdbdb;
+  margin-bottom: -1px;
+  padding: 0.5em 1em;
+  vertical-align: top;
+  font-size: 1rem;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.tabs.is-boxed.main-menu .is-active {
+  color: #0277bd !important;
+  background: white;
+}
+
